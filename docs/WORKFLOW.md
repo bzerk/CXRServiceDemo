@@ -1,6 +1,6 @@
 # Development Workflow
 
-Day-to-day loop for fast iteration on glasses.
+Day-to-day loop for fast iteration on the hand-tracking demo.
 
 ## Build + deploy loop
 
@@ -12,18 +12,11 @@ source env.sh
 
 ## Useful commands
 
-Start launcher activity:
+Start hand-tracking activity:
 
 ```bash
 source env.sh
-adb shell am start -n com.example.cxrservicedemo/.DemoSelectorActivity
-```
-
-Start hand tracking directly:
-
-```bash
-source env.sh
-adb shell am start -n com.example.cxrservicedemo/.HandTrackingActivity
+adb shell am start -n com.example.rokidhandtrackingdemo/.HandTrackingActivity
 ```
 
 Watch app logs:
@@ -45,11 +38,10 @@ source env.sh
 - Keep overlays simple and avoid heavy per-frame allocations.
 - Prefer lower camera resolution and fewer model inferences.
 - Use `STRATEGY_KEEP_ONLY_LATEST` for image analysis streams.
-- Pause camera/sensors when activity is backgrounded.
+- Pause camera when activity is backgrounded.
 
 ## If app exits unexpectedly
 
 1. Capture logs with `./scripts/logcat_app.sh`.
 2. Check for thermal/memory/system kills in `logcat`.
 3. Reduce workload (fps, resolution, inference frequency).
-

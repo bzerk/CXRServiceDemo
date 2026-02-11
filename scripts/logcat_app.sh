@@ -2,7 +2,7 @@
 set -euo pipefail
 
 APP_TAG="CXRServiceDemo"
-APP_ID="com.example.cxrservicedemo"
+APP_ID="com.example.rokidhandtrackingdemo"
 
 if [[ ! -f "env.sh" ]]; then
   echo "Run this script from project root (env.sh missing)." >&2

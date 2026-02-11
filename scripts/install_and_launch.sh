@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-APP_ID="com.example.cxrservicedemo"
+APP_ID="com.example.rokidhandtrackingdemo"
 APK_PATH="app/build/outputs/apk/debug/app-debug.apk"
-LAUNCH_ACTIVITY=".DemoSelectorActivity"
+LAUNCH_ACTIVITY=".HandTrackingActivity"
 
 if [[ ! -f "env.sh" ]]; then
   echo "Run this script from project root (env.sh missing)." >&2

@@ -8,7 +8,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.cxrservicedemo"
+        applicationId = "com.example.rokidhandtrackingdemo"
         minSdk = 28
         targetSdk = 34
         versionCode = 1
@@ -50,5 +50,4 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation("com.rokid.cxr:cxr-service-bridge:1.0")
 }

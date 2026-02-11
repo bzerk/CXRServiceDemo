@@ -1,6 +1,6 @@
 # Setup Guide
 
-This guide gets a fresh machine ready to build and run this app on Rokid glasses.
+This guide gets a fresh machine ready to build and run the hand-tracking demo on Rokid glasses.
 
 ## 1) Install required tools
 
@@ -52,18 +52,14 @@ Expected: a line with your device ID and status `device`.
 source env.sh
 ./gradlew :app:assembleDebug
 adb install -r app/build/outputs/apk/debug/app-debug.apk
-adb shell am start -n com.example.cxrservicedemo/.DemoSelectorActivity
+adb shell am start -n com.example.rokidhandtrackingdemo/.HandTrackingActivity
 ```
 
 ## 6) Optional: grant runtime permissions via ADB
 
 ```bash
 source env.sh
-adb shell pm grant com.example.cxrservicedemo android.permission.CAMERA
-adb shell pm grant com.example.cxrservicedemo android.permission.RECORD_AUDIO
-adb shell pm grant com.example.cxrservicedemo android.permission.BLUETOOTH_CONNECT
-adb shell pm grant com.example.cxrservicedemo android.permission.BLUETOOTH_SCAN
+adb shell pm grant com.example.rokidhandtrackingdemo android.permission.CAMERA
 ```
 
 Note: some Android versions/devices may reject one or more grants if permission policy differs.
-

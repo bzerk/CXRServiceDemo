@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "CXRServiceDemo"
+rootProject.name = "RokidHandTrackingDemo"
 include(":app")

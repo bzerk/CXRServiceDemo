@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-APP_ID="com.example.cxrservicedemo"
+APP_ID="com.example.rokidhandtrackingdemo"
 
 if [[ ! -f "env.sh" ]]; then
   echo "Run this script from project root (env.sh missing)." >&2
@@ -17,9 +17,6 @@ fi
 
 permissions=(
   android.permission.CAMERA
-  android.permission.RECORD_AUDIO
-  android.permission.BLUETOOTH_CONNECT
-  android.permission.BLUETOOTH_SCAN
 )
 
 for permission in "${permissions[@]}"; do
