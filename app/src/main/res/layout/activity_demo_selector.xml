@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Demo Selector"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="20sp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnAmbient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ambient Visualizer"
+            android:background="@android:color/black"
+            android:textColor="@android:color/holo_green_light"
+            android:stateListAnimator="@null"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnHandTracking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hand Tracking"
+            android:background="@android:color/black"
+            android:textColor="@android:color/holo_green_light"
+            android:stateListAnimator="@null"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnBluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bluetooth / CXR Demo"
+            android:background="@android:color/black"
+            android:textColor="@android:color/holo_green_light"
+            android:stateListAnimator="@null"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnObjectLabels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Object Labels (EN + Pinyin)"
+            android:background="@android:color/black"
+            android:textColor="@android:color/holo_green_light"
+            android:stateListAnimator="@null" />
+
+    </LinearLayout>
+</ScrollView>
